@@ -68,7 +68,7 @@ public class LKNCheckBox: UIView{
         
         path.addArc(withCenter: button.center, radius: button.frame.width / 2, startAngle: -CGFloat.pi / 4, endAngle: CGFloat.pi*7/4, clockwise: true)
         shapeLayer.fillColor = UIColor.clear.cgColor
-        shapeLayer.strokeColor = UIColor(hexString: "#01b7b7").cgColor
+        shapeLayer.strokeColor = lineColor
         shapeLayer.lineWidth = lineWidth
         shapeLayer.path = path.cgPath
         shapeLayer.strokeEnd = 0
@@ -78,7 +78,7 @@ public class LKNCheckBox: UIView{
         hookPath.addLine(to: CGPoint(x: button.center.x, y: button.center.y + button.frame.height / 8 + button.frame.height / 20))
         hookPath.addLine(to: CGPoint(x: button.center.x + button.frame.width / 4, y: button.center.y - button.frame.height / 4 + button.frame.height / 20))
         hookShapeLayer.fillColor = UIColor.clear.cgColor
-        hookShapeLayer.strokeColor = UIColor(hexString: "#01b7b7").cgColor
+        hookShapeLayer.strokeColor = lineColor
         hookShapeLayer.lineWidth = lineWidth
         hookShapeLayer.path = hookPath.cgPath
         hookShapeLayer.strokeEnd = 0
